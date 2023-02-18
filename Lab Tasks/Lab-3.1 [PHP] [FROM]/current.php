@@ -1,45 +1,43 @@
-
 <html>
     <body>
-        <form method="POST" action="handler.php">
-         Name <br>
-          <input type="text" name="name" value=""> 
-          <br>
+        <form method="Post" action="handler.php">
+        
+             Name
+            <input type="text"name="name"value=""> <br><br>
 
-
-         Email <br>
-          <input type="text" name="email" value=""/> <br>
-         
-    
-         Date OF Birth
-         <br>
-         <input type="date" number="Date of birth" value=""><br>
-
-         Gender
-         <br>
-         Male<input type="radio" value="Male" name="gender">
-         Female<input type="radio" value="Female" name="gender">
-         Other<input type="radio" value="Other" name="gender"><br>
-
-         
-
-
-
-         
-            <input type="checkbox"name="degrees" value="SSC">SSC
-            <input type="checkbox"name="degrees" value="HSC">HSC
-            <input type="checkbox"name="degrees" value="BSc">BSc
-            <br>
+            Email
+            <input type="text"name="email"value=""> <br><br>
             
-          
-    
-           <input type="submit" value="submit">
-
-
-
-           
-
-
+            Dateof birth
+            <input type="date"name="date_of_birth"value=""/><br><br>
+            
+            Gender<br>
+            <input type="radio"name="gender"value="male">Male
+            <input type="radio"name="gender"value="female">Female
+            <input type="radio"name="gender"value="other">Other <br><br>
+            
+             Degree<br>
+            <input type="checkbox"name="degree"value="">ssc
+            <input type="checkbox"name="degree"value="">Hsc
+            <input type="checkbox"name="degree"value="">BSc
+            <input type="checkbox"name="degree"value="">MSc <br><br>
+            <br>
+            Blood group
+            <select name="blood_group">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            
+            <br>
+            <br>
+        </select> <br>
+            
+            <input type="submit" name="" value="submit"/>
         </form>
     </body>
 </html>
