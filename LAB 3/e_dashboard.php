@@ -1,15 +1,20 @@
+
+
+<?php 
+    session_start();
+    if(isset($_SESSION['flag'])){
+?>
+
 <html>
-
-
 <table border="1" align="center" width="40%">
     
     <tr>
     <td colspan="2">Xcompany
     </td><td>
     
-    logged in as | <?php  ?>
+    logged in as <?php echo $_SESSION['username']  ?> |
     
-    <a href="">logout</a>
+    <a href="logout.php">Logout</a>
     </td>
    
     
@@ -26,7 +31,7 @@
             <li><a href="g_edit_profile.php">Edit Profile</a></li>
             <li><a href="h_profile_picture.php">Change Profile Picture</a></li>
             <li><a href="i_change_password.php">Change Password</a></li>
-            <li><a href="a_public_home.php">Logout</a></li>
+            <li><a href="logout.php">Logout</a></li>
         </ul>
        </td>
        <td>Welcome to the Dashboard</td>
@@ -43,3 +48,14 @@
 
 
 </html>
+
+<?php
+    }
+    else{
+        echo "invalid request, please login first...";
+        echo"<a href='login.php'>Login</a>";
+    }
+
+?>
+
+

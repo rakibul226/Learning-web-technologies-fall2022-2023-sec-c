@@ -1,6 +1,6 @@
 <html>
 
-
+<form action="logincheck.php" method="POST">
 <table border="1" align="center" width="40%">
     
     <tr>
@@ -12,33 +12,27 @@
                    </p> 
            </td>
     </tr>
-
     <tr>
       <td colspan="5"> <br>
            <table>
                 <fieldset>
                     <legend>Login</legend>
                     <pre>
-  User Name : <input type="text"><br>
-  Password  : <input type="password">
+  User Name : <input type="text" name="username" placeholder="admin"><br>
+  Password  : <input type="password" name="password" placeholder="admin">
                     </pre>
                         <hr>
                     <input type="checkbox">Remember me <br>
-                    <input type="submit" value="submit">
+                     <input type="submit" name="submit">
                     <a href="d_Forgot_password.php">Forgot Password?</a> <br>
              </fieldset>
-
                
-
            </table>
        </td>
     </tr>
-
     <tr>
       <td colspan="5"><center>Copyright @2017</center> </td>
     </tr>
-
 </table>
-
-
+</form>
 </html>

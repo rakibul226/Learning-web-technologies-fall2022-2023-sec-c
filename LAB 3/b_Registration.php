@@ -8,8 +8,8 @@
         }
     </style>
 
-<?php
-        if(isset($_SESSION['button'])){
+<?php 
+       /* if(isset($_SESSION['button'])){
             $name = $_SESSION['name'];
             $email = $_SESSION['email'];
             $password = $_SESSION['password'];
@@ -18,14 +18,14 @@
             $blood_group = $_SESSION['blood_group'];
             $degree = $_SESSION['degree'];
         }
-
+        */
 
 
 
             //echo"Usename : ";
              //echo $_REQUEST['user_name'];
             //<br>
-        if(isset($_REQUEST['button'])){
+        if(isset($_REQUEST['submit'])){
               $name = $_REQUEST['name'];
               $email = $_REQUEST['email'];
               $password = $_REQUEST['password'];
@@ -39,7 +39,7 @@
 
     ?>
 
-    <form action="e_dashboard.php" method="POST">
+    <form action="" method="POST">
 
        <table   align="center" width="50%" >
              <tr>
@@ -106,7 +106,7 @@
         <?php
         
         
-
+/*
         if(isset($_REQUEST['submit'])){
             $name = $_REQUEST['name'];
             $email = $_SESSION['email'];
@@ -116,7 +116,9 @@
             $blood_group = $_SESSION['blood_group'];
             $degree = $_SESSION['degree'];
             
-        }
+        }*/
+
+        
         
         ?>
 
